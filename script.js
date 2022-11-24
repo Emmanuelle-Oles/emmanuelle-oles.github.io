@@ -1,0 +1,1 @@
+var listTechnologies = document.getElementsByClassName("technologies");

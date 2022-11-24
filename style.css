@@ -1,9 +1,6 @@
 *{
     font-family: "Helvetica";
 }
-body{
-    
-}
 
 a{
     text-decoration: none;
@@ -22,6 +19,10 @@ a:hover{
     
 }
 
+li{
+    list-style: none;
+}
+
 
 .main-grid-item{
 }
@@ -38,14 +39,19 @@ a:hover{
 }
 
 .bottom-page-container{
-    /* height: 50%; */
-    /* width: 100%; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 
 }
 
+.projects{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+}
 
 .water{
     grid-column-start: 1;

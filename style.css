@@ -1,0 +1,95 @@
+*{
+    font-family: "Helvetica";
+}
+body{
+    
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.5em;
+    font-size: bold;
+}
+
+a:hover{
+    font-weight: bolder;
+
+}
+
+.main-grid{
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    
+}
+
+
+.main-grid-item{
+}
+
+.top-page-container{
+    display: grid;
+    height:200px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.grid-item{
+    text-align: center;
+}
+
+.bottom-page-container{
+    /* height: 50%; */
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+
+
+.water{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    z-index: 1;
+}
+.island{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    z-index: 2;
+    
+}
+
+.tree{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    z-index: 2;
+}
+
+.palm{
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    z-index: 3;
+}
+
+.about-me{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+
+
+#sky-background{
+
+    background-color: #a4e0d1 ;
+}
+

@@ -8,6 +8,12 @@ a{
     font-size: bold;
 }
 
+button{
+    font-size: 1.5em;
+    border: none;
+    background-color: transparent;
+}
+
 a:hover{
     font-weight: bolder;
 
@@ -15,28 +21,79 @@ a:hover{
 
 .main-grid{
     display: grid;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-rows: 200px 220px 200px;
     
+}
+
+button:hover{
+    font-weight: bolder;
+    
+
 }
 
 li{
     list-style: none;
 }
 
+.education p{
+    margin: 0.1em;
 
-.main-grid-item{
 }
+
+
+.dropdown{
+    position: relative;
+    display:inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/* .main-grid-item{
+} */
 
 .top-page-container{
     display: grid;
-    height:200px;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 
 .grid-item{
     text-align: center;
+    margin: 0.5em;
 }
+
+/* middle of the page content */
+
+.middle-page-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.list-technologies{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.projects{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+}
+
+/* bottom of the page content */
 
 .bottom-page-container{
     display: grid;
@@ -45,13 +102,6 @@ li{
 
 }
 
-.projects{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-
-}
 
 .water{
     grid-column-start: 1;
@@ -91,6 +141,16 @@ li{
     grid-row-start: 2;
     grid-row-end: 3;
 }
+
+.education{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end:5;
+    z-index: 4;
+}
+
+
 
 
 
